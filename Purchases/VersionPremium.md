@@ -1,5 +1,5 @@
 ---
-title: Premium version
+title: Premium Version
 tags: purchases
 ---
 
