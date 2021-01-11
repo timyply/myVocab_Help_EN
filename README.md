@@ -49,9 +49,9 @@ class UIKitExampleController_MinimalCode: UIViewController {
 - [404 Page](https://timyply.github.io/myVocab_Help_EN/404) (SupportDocs Integrated File) ([edit](https://github.com/timyply/myVocab_Help_EN/edit/DataSource/myVocab_Help_EN/404.md))
 - [Ajout d'une langue](https://timyply.github.io/myVocab_Help_EN/Languages/Add) (languages) ([edit](https://github.com/timyply/myVocab_Help_EN/edit/DataSource/Languages/Add.md))
 - [Fonctionnement](https://timyply.github.io/myVocab_Help_EN/Tests/HowWorks) (tests) ([edit](https://github.com/timyply/myVocab_Help_EN/edit/DataSource/Tests/HowWorks.md))
+- [Premium version](https://timyply.github.io/myVocab_Help_EN/Purchases/VersionPremium) (purchases) ([edit](https://github.com/timyply/myVocab_Help_EN/edit/DataSource/Purchases/VersionPremium.md))
 - [Suppression d'une langue](https://timyply.github.io/myVocab_Help_EN/Languages/Delete) (languages) ([edit](https://github.com/timyply/myVocab_Help_EN/edit/DataSource/Languages/Delete.md))
 - [Suppression de cartes](https://timyply.github.io/myVocab_Help_EN/Cards/Delete) (cards) ([edit](https://github.com/timyply/myVocab_Help_EN/edit/DataSource/Cards/Delete.md))
-- [Version Premium](https://timyply.github.io/myVocab_Help_EN/Purchases/VersionPremium) (purchases) ([edit](https://github.com/timyply/myVocab_Help_EN/edit/DataSource/Purchases/VersionPremium.md))
 
 
 ## Notes
