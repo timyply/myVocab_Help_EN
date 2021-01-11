@@ -1,0 +1,93 @@
+$dark-theme: "dark-theme";
+$light-theme: "light-theme";
+
+$background: "background";
+$title: "title";
+$text: "text";
+$link: "link";
+$horizontal-line: "horizontal-line";
+$code-block-background: "code-block-background";
+$inline-code-background: "inline-code-background";
+$blockquote-text: "blockquote-text";
+$blockquote-left-bar: "blockquote-left-bar";
+$table-border: "table-border";
+$table-primary-background: "table-primary-background";
+$table-secondary-background: "table-secondary-background";
+
+/* Customize colors here! */
+$themes: (
+    $light-theme: (
+        background: rgba(242.0, 242.0, 247.0, 1.0),
+        title: rgb(33, 100, 165), 
+        text: rgba(60, 60, 67, 0.6), 
+        link: rgb(3, 102, 214), /* deep blue */
+        horizontal-line: transparent, /* medium gray */
+        code-block-background: rgb(246, 248, 250), /* light gray */
+        inline-code-background: rgba(27, 31, 35, 0.05), /* very dark gray but with alpha, results in light gray */
+        blockquote-text: rgb(106, 115, 125), /* dark gray */
+        blockquote-left-bar: rgb(223, 226, 229), /* medium light gray */
+        table-border: rgb(223, 226, 229), /* medium light gray */
+        table-primary-background: rgb(255, 255, 255), /* white */
+        table-secondary-background: rgb(246, 248, 250),  /* extremely light gray */
+    ),
+    $dark-theme: (
+        background: rgba(28, 28, 30, 1.0),
+        title: rgb(59, 114, 187), 
+        text: rgba(235, 235, 245, 0.6),
+        link: rgb(204, 230, 255), /* very light blue */
+        horizontal-line: transparent, /* medium dark gray */
+        code-block-background: rgb(38, 38, 38), /* dark gray */
+        inline-code-background: rgb(38, 38, 38), /* dark gray */
+        blockquote-text: rgb(191, 191, 191), /* medium light gray */
+        blockquote-left-bar: rgb(51, 51, 51), /* darker gray */
+        table-border: rgb(80, 89, 98), /* medium gray */
+        table-primary-background: rgb(26, 26, 26), /* very dark gray */
+        table-secondary-background: rgb(51, 51, 51), /* dark gray */
+    ),
+);
+
+@mixin themeProperty(
+    $theme,
+    $property,
+    $color,
+    $additionalPropertiesPositionIsFront,
+    $additionalProperties
+) {
+    @if $additionalPropertiesPositionIsFront {
+        #{$property}: unquote(
+            $additionalProperties + " " + map-get($theme, $color)
+        );
+    } @else {
+        #{$property}: unquote(
+            map-get($theme, $color) + " " + $additionalProperties
+        );
+    }
+}
+
+@mixin theme(
+    $property,
+    $color,
+    $additionalPropertiesPositionIsFront: false,
+    $additionalProperties: ""
+) {
+    $light: map-get($themes, $light-theme);
+    $dark: map-get($themes, $dark-theme);
+
+    @include themeProperty(
+        $light,
+        $property,
+        $color,
+        $additionalPropertiesPositionIsFront,
+        $additionalProperties
+    );
+
+    @media (prefers-color-scheme: dark) {
+        @include themeProperty(
+            $dark,
+            $property,
+            $color,
+            $additionalPropertiesPositionIsFront,
+            $additionalProperties
+        );
+    }
+}
