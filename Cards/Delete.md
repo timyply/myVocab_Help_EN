@@ -1,9 +1,9 @@
 ---
-title: Suppression de cartes
+title: Deleting cards
 tags: cards
 ---
 
-Il existe plusieurs moyens pour cela:
+There is several ways to delete cards:
                         
 - Depuis la section « Langues », il est possible de supprimer un ensemble de cartes en swipant ou en appuyant fortement sur le nom de la langue et en sélectionnant « Supprimer ».
 
