@@ -7,7 +7,7 @@
         ]
     },
     {
-        "title": "Suppression de cartes",
+        "title": "Deleting cards",
         "url": "https://timyply.github.io/myVocab_Help_EN/Cards/Delete",
         "tags": [
             "cards"
@@ -28,7 +28,7 @@
         ]
     },
     {
-        "title": "Premium version",
+        "title": "Premium Version",
         "url": "https://timyply.github.io/myVocab_Help_EN/Purchases/VersionPremium",
         "tags": [
             "purchases"
